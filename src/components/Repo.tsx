@@ -30,7 +30,7 @@ export function Repo() {
         </p>
       </div>
       <Link
-        href=""
+        href={`/repository/${10}`}
         className="flex justify-end text-sm font-light gap-2 my-1 hover:font-outline-1 transition-all"
       >
         <ArrowBendDownRight size={20} />

@@ -6,6 +6,7 @@ import {
   Jacques_Francois_Shadow as JacquesFracoisShadow,
 } from 'next/font/google'
 import { Header } from '@/components/Header'
+import { Profile } from '@/components/Profile'
 
 const roboto = RobotoFlex({ subsets: ['latin'], variable: '--font-roboto' })
 const robotoMono = RobotoMono({
@@ -31,7 +32,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       >
         <main className="grid place-items-center m-4 ">
           <Header />
-          {children}
+
+          <div className="flex max-w-[1120px] w-full gap-8 items-start mt-8">
+            <Profile />
+
+            <div className="flex-1">{children}</div>
+          </div>
         </main>
       </body>
     </html>
