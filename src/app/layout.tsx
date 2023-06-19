@@ -5,6 +5,7 @@ import {
   Roboto_Mono as RobotoMono,
   Jacques_Francois_Shadow as JacquesFracoisShadow,
 } from 'next/font/google'
+import { Header } from '@/components/Header'
 
 const roboto = RobotoFlex({ subsets: ['latin'], variable: '--font-roboto' })
 const robotoMono = RobotoMono({
@@ -28,7 +29,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body
         className={`${roboto.variable} ${robotoMono.variable} ${jacquesFracoisShadow.variable} font-sans bg-brown-300`}
       >
-        {children}
+        <main className="grid place-items-center m-4 ">
+          <Header />
+          {children}
+        </main>
       </body>
     </html>
   )
