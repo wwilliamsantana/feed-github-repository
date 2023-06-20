@@ -40,8 +40,10 @@ export default async function InfosRepo({ params }: InfoRepoProps) {
 
       <footer className="mt-1.5">
         <a
-          href=""
+          href={`https://github.com/wwilliamsantana/${params.slug}`}
           className="text-sm font-light flex items-center justify-end gap-4"
+          target="_blank"
+          rel="noreferrer"
         >
           <ArrowRight
             size={20}
