@@ -1,6 +1,17 @@
+import axios from 'axios'
 import Image from 'next/image'
 
-export function Profile() {
+interface ProfileProps {
+  avatar_url: string
+  name: string
+  bio: string
+}
+
+export async function Profile() {
+  const response = await axios.get<ProfileProps>(
+    'https://api.github.com/users/wwilliamsantana',
+  )
+
   return (
     <div className="w-64 border border-black bg-brown-100">
       <Image
@@ -15,17 +26,15 @@ export function Profile() {
 
       <div className="flex items-center justify-center flex-col gap-2 -mt-9">
         <Image
-          src={
-            'https://images.unsplash.com/photo-1572460418264-695212ed493a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80'
-          }
+          src={response.data.avatar_url}
           alt=""
           width={180}
           height={168}
           className=" h-[84px] w-[90px] object-cover rounded-full border border-black"
         />
         <div className="text-center">
-          <p className="font-bold text-brown-900">Leslie Alexander</p>
-          <span className="text-sm text-brown-800">UI Designer</span>
+          <p className="font-bold text-brown-900">{response.data.name}</p>
+          <span className="text-sm text-brown-800">{response.data.bio}</span>
         </div>
 
         <footer className=" mb-6 mt-6 pt-6 border-t border-brown-300 w-full text-center">

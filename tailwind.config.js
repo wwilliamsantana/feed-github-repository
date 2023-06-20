@@ -17,6 +17,15 @@ module.exports = {
           900: '#2e1308',
         },
       },
+      keyframes: {
+        bounceLeftRight: {
+          '0%, 100%': { transform: 'translate(0, 0)' },
+          '50%': { transform: 'translate(6px, 0)' },
+        },
+      },
+      animation: {
+        bounceLeftRight: 'bounceLeftRight 1s ease-in-out infinite',
+      },
     },
   },
   plugins: [],
