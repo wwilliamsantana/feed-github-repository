@@ -1,34 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Página de Login/Cadastro 
 
-## Getting Started
+### Concepção:
 
-First, run the development server:
+- Cria um FEED onde eu possa ter a listagem dos meus repositórios aqui do Github é ao clicar ter mais detalhes, exibindo o README do projeto!
+- Objetivo era criar o Layout (FIGMA)
+- Codar o projeto de acordo as especificações do Layout.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### Resolução:
+- Comecei com a criação do projeto pelo FIGMA. Determinei a palheta de cores, em seguida fiz um pequeno rascunho em um papel para determinar como eu queria organizar os elementos do layout. Após isso passei a ideia para o FIGMA. Onde tentei aplicar o máximo de conceitos, como Auto Layout, Frame, Groups.. [VISUALIZE O PROJETO FIGMA](https://www.figma.com/file/r3fpgpX0NnPgh7YSRgWlzX/Coffee-store?type=design&node-id=0%3A1&mode=design&t=IiMKrbsL6c9Vtb5E-1)
+- Codificação: Resolvi utilizar Next.js 13 + TailwindCSS. Codificação foi de acordo ao layout no figma, utilizei o EsLint para facilitar a identação do código. Utilizei algumas bibliotecas novas nesse projeto que me permitiram expandir meu conhecimento, como DateFNS (Facilitar a manipulação com datas) e Remark-html (Que transforma o conteúdo markdown em HTML, assim conseguindo exibir o README dos repositórios.)
+- Utilizei a API do Github para fazer a busca das informações necessárias. (Foto, Descrição, Nome, Repositórios, README's.)
+- Utilizo os params do HTML, para fazer a chamada para busca do README.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+ ## :rocket: Techs
+ 
+ * Next.js + TypeScript
+ * Axios
+ * TailwindCSS
+ * Date-fns
+ * Remark-html
+ *  Eslint
+ * Phosphor icon
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+ 
 
-## Learn More
+## Layout (FIGMA)
 
-To learn more about Next.js, take a look at the following resources:
+<div align="center">
+  <img alt="Layout" src="https://github.com/wwilliamsantana/feed-github-repository/assets/84254929/49845afb-cf5a-47ed-b343-be1b8fec305e" width="100%">
+</div>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Layout (Desenvolvimento)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<div align="center">
+  <img alt="Layout" src="https://github.com/wwilliamsantana/feed-github-repository/assets/84254929/216db6f0-b611-4d62-9650-d57c5670a1cb" width="80%">
+    <hr>
+  <img alt="Layout" src="https://github.com/wwilliamsantana/feed-github-repository/assets/84254929/e32d4cfe-9c73-4e18-8969-181d48f551c3" width="80%">
+</div>
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
