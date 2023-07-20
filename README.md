@@ -7,10 +7,11 @@
 - Codar o projeto de acordo as especificações do Layout.
 
 ### Resolução:
-- Comecei com a criação do projeto pelo FIGMA. Determinei a palheta de cores, em seguida fiz um pequeno rascunho em um papel para determinar como eu queria organizar os elementos do layout. Após isso passei a ideia para o FIGMA. Onde tentei aplicar o máximo de conceitos, como Auto Layout, Frame, Groups.. [VISUALIZE O PROJETO FIGMA](https://www.figma.com/file/r3fpgpX0NnPgh7YSRgWlzX/Coffee-store?type=design&node-id=0%3A1&mode=design&t=IiMKrbsL6c9Vtb5E-1)
+- Comecei com a criação do projeto pelo FIGMA. Determinei a palheta de cores, em seguida fiz um pequeno rascunho em um papel para determinar como eu queria organizar os elementos do layout. Após isso passei a ideia para o FIGMA. Onde tentei aplicar o máximo de conceitos, como Auto Layout, Frame, Groups.. [VISUALIZE O PROJETO FIGMA](https://www.figma.com/file/FHYZ3l5viedmQuefEpobsD/Project-Store?type=design&node-id=14%3A149&mode=design&t=EkWMpl2yKrAG48hK-1)
 - Codificação: Resolvi utilizar Next.js 13 + TailwindCSS. Codificação foi de acordo ao layout no figma, utilizei o EsLint para facilitar a identação do código. Utilizei algumas bibliotecas novas nesse projeto que me permitiram expandir meu conhecimento, como DateFNS (Facilitar a manipulação com datas) e Remark-html (Que transforma o conteúdo markdown em HTML, assim conseguindo exibir o README dos repositórios.)
 - Utilizei a API do Github para fazer a busca das informações necessárias. (Foto, Descrição, Nome, Repositórios, README's.)
 - Utilizo os params do HTML, para fazer a chamada para busca do README.
+
 
 
  ## :rocket: Techs
